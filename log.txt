@@ -1,0 +1,71 @@
+2023-06-22T18:52:15.453Z [INFO]: # Cloning repository: git@github.com:Yacell31/saferide-health.git
+2023-06-22T18:52:16.135Z [INFO]: 
+2023-06-22T18:52:16.138Z [INFO]: Cloning into 'saferide-health'...
+2023-06-22T18:52:16.138Z [INFO]: # Switching to commit: 3372252bab802b478c11c5c526307b406abd3aba
+2023-06-22T18:52:16.149Z [INFO]: Note: switching to '3372252bab802b478c11c5c526307b406abd3aba'.
+                                 You are in 'detached HEAD' state. You can look around, make experimental
+                                 changes and commit them, and you can discard any commits you make in this
+                                 state without impacting any branches by switching back to a branch.
+                                 If you want to create a new branch to retain commits you create, you may
+                                 do so (now or later) by using -c with the switch command. Example:
+                                 git switch -c <new-branch-name>
+                                 Or undo this operation with:
+                                 git switch -
+                                 Turn off this advice by setting config variable advice.detachedHead to false
+                                 HEAD is now at 3372252 Merge branch 'main' of https://github.com/Yacell31/saferide-health
+2023-06-22T18:52:16.183Z [INFO]: Successfully cleaned up Git credentials
+2023-06-22T18:52:16.184Z [INFO]: # Checking for Git submodules at: /codebuild/output/src892347965/src/saferide-health/.gitmodules
+2023-06-22T18:52:16.190Z [INFO]: # Retrieving environment cache...
+2023-06-22T18:52:16.234Z [WARNING]: ! Unable to write cache: {"code":"ERR_BAD_REQUEST","message":"Request failed with status code 404"})}
+2023-06-22T18:52:16.234Z [INFO]: ---- Setting Up SSM Secrets ----
+2023-06-22T18:52:16.234Z [INFO]: SSM params {"Path":"/amplify/d1zkbejbsbsjmu/main/","WithDecryption":true}
+2023-06-22T18:52:16.265Z [WARNING]: !Failed to set up process.env.secrets
+2023-06-22T18:52:16.266Z [INFO]: No live updates for this build run
+2023-06-22T18:52:16.267Z [INFO]: Setting NEXT_PRIVATE_STANDALONE=true to produce .next/standalone directory
+2023-06-22T18:52:16.268Z [INFO]: # Retrieving cache...
+2023-06-22T18:52:25.695Z [INFO]: # Extracting cache...
+2023-06-22T18:52:28.899Z [INFO]: # Extraction completed
+2023-06-22T18:52:29.055Z [INFO]: # Retrieved cache
+2023-06-22T18:53:01.891Z [INFO]: ## Starting Backend Build
+                                 ## Checking for associated backend environment...
+                                 ## No backend environment association found, continuing...
+                                 ## Completed Backend Build
+2023-06-22T18:53:01.894Z [INFO]: {"backendDuration": 0}
+                                 ## Starting Frontend Build
+                                 # Starting phase: preBuild
+                                 # Executing command: npm ci
+2023-06-22T18:53:05.234Z [WARNING]: npm ERR! code
+2023-06-22T18:53:05.238Z [WARNING]: EUSAGE
+2023-06-22T18:53:05.240Z [WARNING]: npm
+2023-06-22T18:53:05.240Z [WARNING]: ERR!
+                                    npm ERR! `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+                                    npm
+2023-06-22T18:53:05.241Z [WARNING]: ERR!
+                                    npm ERR! Missing: openapi-types@12.1.3 from lock file
+                                    npm ERR!
+                                    npm ERR! Clean install a project
+                                    npm ERR!
+                                    npm ERR! Usage:
+                                    npm ERR! npm ci
+2023-06-22T18:53:05.241Z [WARNING]: npm ERR!
+                                    npm ERR! Options:
+                                    npm ERR! [-S|--save|--no-save|--save-prod|--save-dev|--save-optional|--save-peer|--save-bundle]
+                                    npm ERR! [-E|--save-exact] [-g|--global] [--global-style] [--legacy-bundling]
+                                    npm ERR! [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+                                    npm ERR! [--strict-peer-deps] [--no-package-lock] [--foreground-scripts]
+                                    npm ERR! [--ignore-scripts] [--no-audit] [--no-bin-links] [--no-fund] [--dry-run]
+                                    npm ERR! [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+                                    npm ERR! [-ws|--workspaces] [--include-workspace-root] [--install-links]
+                                    npm ERR!
+                                    npm ERR! aliases: clean-install, ic, install-clean, isntall-clean
+                                    npm ERR!
+2023-06-22T18:53:05.241Z [WARNING]: npm ERR! Run "npm help ci" for more info
+2023-06-22T18:53:05.242Z [WARNING]: 
+2023-06-22T18:53:05.242Z [WARNING]: npm ERR! A complete log of this run can be found in:
+                                    npm ERR!     /root/.npm/_logs/2023-06-22T18_53_02_116Z-debug-0.log
+2023-06-22T18:53:05.247Z [ERROR]: !!! Build failed
+2023-06-22T18:53:05.248Z [INFO]: Please check the supported SSR features to find if your build failure is related to an unsupported feature: https://docs.aws.amazon.com/amplify/latest/userguide/ssr-Amplify-support.html#supported-unsupported-features. You may also find this troubleshooting guide useful: https://docs.aws.amazon.com/amplify/latest/userguide/troubleshooting-ssr-deployment.html
+2023-06-22T18:53:05.248Z [ERROR]: !!! Non-Zero Exit Code detected
+2023-06-22T18:53:05.248Z [INFO]: # Starting environment caching...
+2023-06-22T18:53:05.248Z [INFO]: # Environment caching completed
+Terminating logging...
