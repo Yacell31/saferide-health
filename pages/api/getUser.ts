@@ -61,7 +61,6 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
 		const db = client.db(dbName);
 		const collection = db.collection(collectionName);
 
-
 		const user = await collection.findOne({ username, password });
 
 		if (user) {
