@@ -11,6 +11,7 @@ This project is an authentication microservice built with Next.js, MongoDB, AWS 
   * MongoDB 
   * API Route
   * Application Route
+  * Swagger
   * Local Development
     
 
@@ -23,11 +24,11 @@ This project is an authentication microservice built with Next.js, MongoDB, AWS 
 
 ## Technologies Used
 
-  Next.js: React framework for server-side rendering and building web applications.
-  MongoDB: NoSQL database for storing user data.
-  AWS Amplify: Cloud development platform for deploying and managing the application.
-  Tailwind CSS: Utility-first CSS framework for styling the user interface.
-  TypeScript: Typed superset of JavaScript for enhanced developer experience.
+  * Next.js: React framework for server-side rendering and building web applications.
+  * MongoDB: NoSQL database for storing user data.
+  * AWS Amplify: Cloud development platform for deploying and managing the application.
+  * Tailwind CSS: Utility-first CSS framework for styling the user interface.
+  * TypeScript: Typed superset of JavaScript for enhanced developer experience.
 
 
 ## Development
@@ -51,6 +52,9 @@ To run the authentication microservice locally for development purposes, follow 
 
 ## Application Route
   Live URL for accessing:  https://main.d1zkbejbsbsjmu.amplifyapp.com/
+
+## Swagger Documentation
+https://main.d1zkbejbsbsjmu.amplifyapp.com/api/docs
 
 ## Contributing
   Contributions are welcome! If you have any suggestions, bug fixes, or feature requests, please open an issue or submit a pull request.
