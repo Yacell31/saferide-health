@@ -1,8 +1,9 @@
-import  User  from '../models/User'; // Assuming the User class is in a separate file
+import  User  from '../models/User'; 
 
 class LoginService {
   async loginUser(username: string, password: string): Promise<User | null> {
-    // Make your API request here and fetch the response
+ 
+
     const response = await fetch('/api/getUser', {
       method: 'POST',
       body: JSON.stringify({ username, password }),
