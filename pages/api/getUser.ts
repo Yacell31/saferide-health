@@ -1,6 +1,7 @@
 import { MongoClient, MongoClientOptions } from "mongodb";
 import { NextApiRequest, NextApiResponse } from "next";
 import dotenv from "dotenv";
+import User from "@/models/User";
 
 dotenv.config();
 
@@ -19,10 +20,15 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
 		const db = client.db(dbName);
 		const collection = db.collection(collectionName);
 
+		//console.log
 		const user = await collection.findOne({ username, password });
 
-		res.status(200).json(user);
-		
+		if (user) {
+			res.status(200).json({ userName: user?.username, logIn: true });
+		} else {
+			res.status(200).json(null);
+		}
+
 		client.close();
 	} catch (error) {
 		console.error("Error retrieving user from database:", error);
